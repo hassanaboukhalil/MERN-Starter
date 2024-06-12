@@ -1,34 +1,22 @@
-import { IoBarChartSharp } from "react-icons/io5";
-import { MdQueryStats } from "react-icons/md";
-import { FaWpforms } from "react-icons/fa";
-import { ImProfile } from "react-icons/im";
-import { MdAdminPanelSettings } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
+import { MdOutlineContactSupport } from "react-icons/md";
+import { IoIosCall } from "react-icons/io";
 
 const links = [
   {
-    text: "add job",
+    text: "Home",
     path: ".",
-    icon: <FaWpforms />,
+    icon: <FaHome />,
   },
   {
-    text: "all jobs",
+    text: "About",
     path: "all-jobs",
-    icon: <MdQueryStats />,
+    icon: <MdOutlineContactSupport />,
   },
   {
-    text: "stats",
+    text: "Contact Us",
     path: "stats",
-    icon: <IoBarChartSharp />,
-  },
-  {
-    text: "profile",
-    path: "profile",
-    icon: <ImProfile />,
-  },
-  {
-    text: "admin",
-    path: "admin",
-    icon: <MdAdminPanelSettings />,
+    icon: <IoIosCall />,
   },
 ];
 

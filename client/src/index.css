@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: white;
+  color: black;
+}
+
 :root {
   /* primary */
   /* grey */

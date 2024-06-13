@@ -1,5 +1,7 @@
 function Footer() {
-  return <footer className="footer bg-blue-500">Footer</footer>;
+  return (
+    <footer className="container footer bg-[#842029] text-white">Footer</footer>
+  );
 }
 
 export default Footer;

@@ -1,10 +1,10 @@
-import Layout from "../Layout";
-
 function Home() {
   return (
-    <Layout>
-      <h1>home</h1>
-    </Layout>
+    <main>
+      <section className="container">
+        <h1>Home Page</h1>
+      </section>
+    </main>
   );
 }
 

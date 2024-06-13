@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <Wrapper className="navbar gap-5">
+    <Wrapper className="navbar gap-5 container">
       <Logo />
       {links.map((link) => {
         const { text, path, icon } = link;

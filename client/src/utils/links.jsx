@@ -10,12 +10,12 @@ const links = [
   },
   {
     text: "About",
-    path: "all-jobs",
+    path: "about",
     icon: <MdOutlineContactSupport />,
   },
   {
     text: "Contact Us",
-    path: "stats",
+    path: ".",
     icon: <IoIosCall />,
   },
 ];

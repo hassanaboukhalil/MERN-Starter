@@ -61,6 +61,8 @@ const Wrapper = styled.section`
     border-top: 5px solid var(--primary-500);
     background-color: #aeeb9e;
     padding: 1rem;
+    margin: auto;
+    width: 70%;
   }
   h4 {
     text-align: center;

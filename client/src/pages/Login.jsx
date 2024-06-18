@@ -1,10 +1,29 @@
-import { Link, Form } from "react-router-dom";
+import styled from "styled-components";
+import customFetch from "../utils/customFetch";
+import { toast } from "react-toastify";
+import { Link, redirect } from "react-router-dom";
 import { Logo } from "../components";
+
+export const action =
+  (queryClient) =>
+  async ({ request }) => {
+    const formData = await request.formData();
+    const data = Object.fromEntries(formData);
+    try {
+      await customFetch.post("/auth/login", data);
+      queryClient.invalidateQueries();
+      toast.success("Login successful");
+      return redirect("/");
+    } catch (error) {
+      toast.error(error?.response?.data?.msg);
+      return error;
+    }
+  };
 
 const Login = () => {
   return (
     <Wrapper className="bg-white">
-      <Form method="post" className="form">
+      <form method="post" className="form">
         <Logo />
         <h4>login</h4>
         <div className="form-control">
@@ -40,12 +59,10 @@ const Login = () => {
             Register
           </Link>
         </p>
-      </Form>
+      </form>
     </Wrapper>
   );
 };
-
-import styled from "styled-components";
 
 const Wrapper = styled.section`
   min-height: 100vh;

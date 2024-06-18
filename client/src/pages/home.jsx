@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Home() {
@@ -6,14 +7,21 @@ function Home() {
       <section className="container my-10">
         <h1 className="text-4xl mb-3">Home Page</h1>
         <button
-          className="btn my-3"
+          className="btn my-3 text-lg text-[#a1ffa1]"
           onClick={() => toast.success("Successful")}
         >
-          click me to view a toast that you should return in success
+          click me to view an success toast
         </button>
         <br />
-        <button className="btn my-3" onClick={() => toast.error("Error")}>
-          click me to view a toast that you should return in error
+        <button
+          className="btn my-3 text-lg text-[orange]"
+          onClick={() => toast.error("Error")}
+        >
+          click me to view an error toast
+        </button>
+        <br />
+        <button className="btn my-3 text-lg text-[#ff6a6a]">
+          <Link to="/efwaeqff">click me to view the 404 page</Link>
         </button>
       </section>
     </main>

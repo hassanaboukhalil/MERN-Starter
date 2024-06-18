@@ -16,7 +16,7 @@ const links = [
   },
   {
     text: "Contact Us",
-    path: ".",
+    path: "contact-us",
     icon: <IoIosCall />,
   },
   {
